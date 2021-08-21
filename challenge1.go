@@ -14,7 +14,7 @@ func Challenge1(w http.ResponseWriter, r *http.Request) {
 		file := vars["file"]
 		fmt.Print(file)
 		if file == "" || file == "admin.html" {
-			file = "login.html"
+			file = "index.html"
 		}
 		htmlFile, err := ioutil.ReadFile("./challenge1/" + file)
 		if err != nil {
